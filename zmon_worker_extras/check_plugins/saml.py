@@ -99,7 +99,7 @@ def get_saml_response(html):
     >>> get_saml_response('<input name="a"/>')
 
     >>> get_saml_response('<body xmlns="bla"><form><input name="SAMLResponse" value="eG1s"/></form></body>')
-    'xml'
+    u'xml'
     """
     soup = BeautifulSoup(html, "html.parser")
 
